@@ -40,12 +40,15 @@ export const sortByDistance = (
 
 	const newPoints = points.slice();
 
-	newPoints.sort(function (a, b) {
-		a.distance = distanceBetweenPoints(origin, a, names, type);
-		b.distance = distanceBetweenPoints(origin, b, names, type);
-		return a.distance - b.distance;
-	});
-
+	if (newPoints.length > 1) {
+		newPoints.sort(function (a, b) {
+			a.distance = distanceBetweenPoints(origin, a, names, type);
+			b.distance = distanceBetweenPoints(origin, b, names, type);
+			return a.distance - b.distance;
+		});
+	} else {
+		newPoints[0].distance = distanceBetweenPoints(origin, newPoints[0], names, type);
+	}
 	return newPoints;
 };
 
