@@ -1,20 +1,21 @@
 {
   "name": "sort-by-distance",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Sort array of points based on how close they are to a givin point",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tiaanduplessis/sort-by-distance.git"
+    "url": "https://github.com/qurfy/sort-by-distance.git"
   },
-  "homepage": "https://github.com/tiaanduplessis/sort-by-distance",
-  "bugs": "https://github.com/tiaanduplessis/sort-by-distance/issues",
+  "homepage": "https://github.com/qurfy/sort-by-distance",
+  "bugs": "https://github.com/qurfy/sort-by-distance/issues",
   "author": "Tiaan du Plessis",
   "scripts": {
     "test": "vitest",
